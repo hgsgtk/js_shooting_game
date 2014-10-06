@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Game in 2014 summer vacation</title>
+		<style>
+			body{
+				background: #eee;
+			}
+
+			canvas{
+				background: #000;
+				display: block;
+				/*display要素とはブロックを作るプロパティで、blockとした場合は前後が改行されて表示される仕組みになる。
+				また、inlineとした場合は行間に入る。
+				その他、詳しくは以下URLを参照
+				http://www.htmq.com/style/display.shtml
+				*/
+				margin: auto;
+				/*これを指定すると左右中央に要素が配置できるようになる。*/
+			}
+		</style>
+	</head>
+	<body>
+		<img id="player" src="img/player.png">
+		<img id="enemy" src="img/enemy.png">
+		<img id="player_bullet" src="img/player_bullet.png">
+		<img id="enemy_bullet" src="img/enemy_bullet.png">
+		<canvas id="screen" width="240" height="320"></canvas>
+		<script src="js/shooting.js"></script>
+	</body>
+	<!-- 
+		０、http://lambdalisue.hatenablog.com/entry/2013/12/25/160910
+		１、難しかった部分・できていない部分
+		当たり判定・メインループ・倒した敵のカウントができない。・スタート画面が点滅している・遷移画面操作
+
+		２、更なる改善案
+		加速度を取り入れて操作を難しくしてもいいのでは？
+		三角関数などを駆使して弾幕を作ってみても面白いかも
+		敵にも弾を打たせようぜ
+		敵の種類も増やそうぜ
+		敵の動き方が単調すぎるので面白い動き方を考えてみては？
+		マップチップの考え方などを使ってステージをデザインしてもいいかも（今ランダム に配置しているだけなので）
+		せっかくならステージをいくつか作って画面遷移で切り替えとか？
+		ポーズ機能作ってみるとか？
+		アイテムをとったら強化させるとか？
+
+	 -->
+</html>
